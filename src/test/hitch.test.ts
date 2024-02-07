@@ -125,8 +125,7 @@ describe('GIVEN a Hitch instance with varying numbers of available drivers', () 
     it('THEN does not apply an availableDriversSurge when 5 or more drivers are available', () => {
         const pickup = [29.4241, -98.4936];
         const dropOff = [29.4260, -98.4861];
-        // Adjust the expected cost based on your specific implementation details
-        const expectedCost = 0.2669238936478486; // Adjust based on the corrected understanding
+        const expectedCost = 0.2669238936478486; 
         expect(hitchManyDrivers.getRideQuote(pickup, dropOff)).toBeCloseTo(expectedCost, 1);
     });
 });
